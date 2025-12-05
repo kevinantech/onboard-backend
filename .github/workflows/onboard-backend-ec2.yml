@@ -14,7 +14,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: maven
-        run: ./mvnw test
+      - run: ./mvnw test
 
   build: ### Job para construir el JAR
     needs: test
@@ -26,7 +26,7 @@ jobs:
           java-version: "17"
           distribution: "temurin"
           cache: maven
-        run: ./mvnw clean package -DskipTests
+      - run: ./mvnw clean package -DskipTests
 
       - name: Subir JAR construido como artefacto
         uses: actions/upload-artifact@v4
