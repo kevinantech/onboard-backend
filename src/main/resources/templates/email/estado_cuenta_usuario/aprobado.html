@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #4caf50">
+            ✅ Your account has been approved,
+            <span th:text="${nombre}">Usuario</span>!
+        </h2>
+
+        <p>
+            We're happy to inform you that your account on OnBoard has been
+            successfully verified and approved.
+        </p>
+
+        <p>You can now enjoy all the features of our platform.</p>
+
+        <img th:src="${logoUrl}" alt="Logo" style="width: 300px; margin-top: 20px" />
+
+        <p>Welcome aboard, and thank you for joining us!</p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #e53935">
+            Offer Rejected, <span th:text="${nombre}">Usuario</span>
+        </h2>
+
+        <p>
+            We regret to inform you that the offer for your vehicle with license plate
+            <strong th:text="${placa}">XXX000</strong> has been
+            <strong>rejected</strong> as it does not meet the platform’s quality or verification standards.
+        </p>
+
+        <p>
+            If you believe this decision was made in error, please contact our customer service team to request a review.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Platform Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>
+            Thank you for using our platform. We're here to assist you with any questions or concerns.
+        </p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detalles del Alquiler - Cliente</title>
+    <link rel="stylesheet" href="contrato.css" />
+  </head>
+  <body>
+    <h1>Detalles del Contrato de Alquiler de Vehículo</h1>
+
+    <p>
+      ${saludo}
+      <br /><br />
+      Este documento ha sido generado a través de la plataforma
+      <strong>OnBoard</strong>, la cual facilita el contacto y la gestión de
+      alquileres de vehículos entre propietarios y arrendatarios.
+    </p>
+
+    <p>
+      A continuación, se presentan las condiciones y los detalles relevantes del
+      alquiler del vehículo solicitado. Este documento refleja los términos
+      acordados por las partes involucradas para garantizar una experiencia de
+      movilidad segura, cómoda y eficiente.
+    </p>
+
+    <p><strong>Ciudad:</strong> ${ciudad}</p>
+    <p><strong>Fecha de generación del documento:</strong> ${fecha}</p>
+
+    <h2 class="section-title">Información del Cliente</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>${nombreCliente}</td>
+      </tr>
+      <tr>
+        <th>Tipo de Identificación</th>
+        <td>${tipoIdentificacionCliente}</td>
+      </tr>
+      <tr>
+        <th>Número de Documento</th>
+        <td>${idCliente}</td>
+      </tr>
+      <tr>
+        <th>Teléfono</th>
+        <td>${telefonoCliente}</td>
+      </tr>
+      <tr>
+        <th>Dirección</th>
+        <td>${direccionCliente}</td>
+      </tr>
+    </table>
+
+    <h2 class="section-title">Información del Propietario</h2>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <td>${nombrePropietario}</td>
+      </tr>
+      <tr>
+        <th>Tipo de Identificación</th>
+        <td>${tipoIdentificacionPropietario}</td>
+      </tr>
+      <tr>
+        <th>Número de Documento</th>
+        <td>${idPropietario}</td>
+      </tr>
+      <tr>
+        <th>Teléfono</th>
+        <td>${telefonoPropietario}</td>
+      </tr>
+      <tr>
+        <th>Dirección</th>
+        <td>${direccionPropietario}</td>
+      </tr>
+    </table>
+
+    <h2 class="section-title">Información del Vehículo</h2>
+    <table>
+      <tr>
+        <th>Placa</th>
+        <td>${placa}</td>
+      </tr>
+      <tr>
+        <th>Marca</th>
+        <td>${marca}</td>
+      </tr>
+      <tr>
+        <th>Modelo</th>
+        <td>${modelo}</td>
+      </tr>
+      <tr>
+        <th>Año</th>
+        <td>${anio}</td>
+      </tr>
+      <tr>
+        <th>Tipo</th>
+        <td>${tipoVehiculo}</td>
+      </tr>
+      <tr>
+        <th>Transmisión</th>
+        <td>${transmision}</td>
+      </tr>
+      <tr>
+        <th>Combustible</th>
+        <td>${combustible}</td>
+      </tr>
+      <tr>
+        <th>Kilometraje</th>
+        <td>${kilometraje} km</td>
+      </tr>
+      <tr>
+        <th>Capacidad</th>
+        <td>${capacidad} pasajeros</td>
+      </tr>
+      <tr>
+        <th>Descripción</th>
+        <td>${descripcion}</td>
+      </tr>
+    </table>
+
+    <h2 class="section-title">Documentos del Vehículo</h2>
+    <table>
+      <tr>
+        <th>SOAT</th>
+        <td><a href="${urlSoat}" target="_blank">Ver documento</a></td>
+      </tr>
+      <tr>
+        <th>Tecnomecánica</th>
+        <td><a href="${urlTecno}" target="_blank">Ver documento</a></td>
+      </tr>
+      <tr>
+        <th>Antecedentes</th>
+        <td>
+          <a href="${urlAntecedentes}" target="_blank">Ver documento</a>
+        </td>
+      </tr>
+    </table>
+
+    <h2 class="section-title">Condiciones del Alquiler</h2>
+    <table>
+      <tr>
+        <th>Fecha de Inicio</th>
+        <td>${fechaInicio}</td>
+      </tr>
+      <tr>
+        <th>Fecha de Finalización</th>
+        <td>${fechaFin}</td>
+      </tr>
+      <tr>
+        <th>Lugar de Recogida</th>
+        <td>${lugarRecogida}</td>
+      </tr>
+      <tr>
+        <th>Lugar de Entrega</th>
+        <td>${lugarEntrega}</td>
+      </tr>
+      <tr>
+        <th>Precio por Día</th>
+        <td>$${precioPorDia}</td>
+      </tr>
+      <tr>
+        <th>Total Estimado</th>
+        <td><strong>$${total}</strong></td>
+      </tr>
+    </table>
+
+    <p class="small">
+      Este documento ha sido generado exclusivamente para el arrendatario como
+      constancia de los detalles del contrato de alquiler del vehículo descrito.
+    </p>
+
+    <p class="small">
+      Al recibir este documento, confirmo que he leído y
+      <a
+        href="https://vbtvwszlngotrdoqcanb.supabase.co/storage/v1/object/public/documentos/negocio/terminos_condiciones_onboard.pdf"
+        target="_blank"
+      >
+        <strong>acepto los términos y condiciones de OnBoard</strong> </a
+      >, la plataforma mediante la cual se gestionó este alquiler.
+    </p>
+
+    <p class="small">
+      Para más información sobre nuestros servicios, por favor visita
+      <a href="https://onboard.com" target="_blank">www.onboard.com</a>.
+    </p>
+  </body>
+</html>

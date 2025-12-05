@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #4caf50">
+            Reservation confirmed, <span th:text="${nombre}">Usuario</span>!
+        </h2>
+
+        <p>
+            Your reservation for the vehicle with license plate
+            <strong th:text="${placa}">XXX000</strong> is now
+            <strong>active</strong>.
+        </p>
+
+        <p>Thank you for your payment. Everything is ready for your trip!</p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Platform Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>Need help or have questions? Our support team is here for you.</p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

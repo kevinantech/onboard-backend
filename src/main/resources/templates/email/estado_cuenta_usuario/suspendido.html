@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #ff9800">
+            ⚠️ Account Suspended - <span th:text="${nombre}">Usuario</span>
+        </h2>
+
+        <p>
+            We regret to inform you that your OnBoard account has been
+            <strong>suspended</strong> due to policy violations or suspicious
+            activity.
+        </p>
+
+        <p>
+            If you believe this was a mistake or would like to resolve this
+            issue, please contact our support team.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>We're here to help and guide you through any necessary steps.</p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

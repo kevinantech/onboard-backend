@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Factura Electrónica</title>
+</head>
+<body>
+    <p>Hola <strong th:text="${nombre}"></strong>,</p>
+    <p>Adjuntamos tu factura electrónica correspondiente a tu reserva.</p>
+    <p><strong>Total:</strong> $<span th:text="${total}"></span> USD</p>
+    <p><strong>Fecha de emisión:</strong> <span th:text="${fecha}"></span></p>
+    <img th:src="${logoUrl}" style="width: 150px; margin-top: 20px;" />
+    <p>Gracias por utilizar OnBoard.</p>
+</body>
+</html>

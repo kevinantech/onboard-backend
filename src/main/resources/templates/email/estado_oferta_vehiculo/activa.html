@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #4caf50">
+            Your offer is now active, <span th:text="${nombre}">Usuario</span>!
+        </h2>
+
+        <p>
+            Great news! The offer for your vehicle with license plate
+            <strong th:text="${placa}">XXX000</strong> has been successfully
+            <strong>activated</strong> on our platform.
+        </p>
+
+        <p>
+            Your vehicle is now visible to users, who can explore the details
+            and send rental requests.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Platform Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>
+            If you have any questions or need help, feel free to reach out to
+            our support team at any time.
+        </p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

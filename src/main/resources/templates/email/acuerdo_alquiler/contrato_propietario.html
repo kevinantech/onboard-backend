@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #2196f3">
+            Rental Details, <span th:text="${nombre}">Owner</span>
+        </h2>
+
+        <p>
+            We are pleased to inform you that your vehicle has been selected for
+            a rental through the <strong>OnBoard</strong> platform.
+        </p>
+
+        <p>
+            Attached to this message is a PDF document that outlines the full
+            details of the rental agreement, including rental dates,
+            compensation, and general conditions.
+        </p>
+
+        <p>
+            Please review the attached contract carefully to ensure all
+            information is accurate and up to date. This document formalizes the
+            agreement between you and the client.
+        </p>
+
+        <p>
+            If you have any questions regarding this agreement or the rental
+            process, do not hesitate to reach out to our team.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="OnBoard Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply directly to this
+            email.
+        </p>
+    </body>
+</html>

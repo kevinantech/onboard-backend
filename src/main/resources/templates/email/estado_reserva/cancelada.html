@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #f44336">
+            Reservation cancelled, <span th:text="${nombre}">Usuario</span>.
+        </h2>
+
+        <p>
+            The reservation for the vehicle with license plate
+            <strong th:text="${placa}">XXX000</strong> has been
+            <strong>cancelled</strong>.
+        </p>
+
+        <p>
+            If this was a mistake or you need to make another reservation, feel
+            free to use our platform again.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Platform Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>If you have any concerns, contact our support team.</p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

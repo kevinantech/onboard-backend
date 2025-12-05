@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #f44336">
+            ❌ Your registration was rejected,
+            <span th:text="${nombre}">Usuario</span>.
+        </h2>
+
+        <p>
+            After reviewing your registration, we regret to inform you that your
+            account could not be approved.
+        </p>
+
+        <p>
+            If you believe this is an error or need further information, please
+            contact our support team.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>Thank you for your interest in OnBoard.</p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>

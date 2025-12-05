@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body style="font-family: Arial, sans-serif; color: #333">
+        <h2 style="color: #2196f3">
+            Vehicle Under Maintenance, <span th:text="${nombre}">Usuario</span>
+        </h2>
+
+        <p>
+            The offer for your vehicle with license plate
+            <strong th:text="${placa}">XXX000</strong> has been marked as
+            <strong>under maintenance</strong>.
+        </p>
+
+        <p>
+            While in this state, your vehicle will not appear on the platform and
+            cannot be rented by users.
+        </p>
+
+        <img
+            th:src="${logoUrl}"
+            alt="Platform Logo"
+            style="width: 300px; margin-top: 20px"
+        />
+
+        <p>
+            Once maintenance is complete, you can update the vehicle's status to
+            make it available again.
+        </p>
+
+        <p style="font-size: 0.9em; color: gray">
+            This is an automated message — please do not reply.
+        </p>
+    </body>
+</html>
