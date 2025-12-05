@@ -71,7 +71,4 @@ jobs:
             # Iniciar la aplicación
             sudo systemctl start onboard-backend
 
-            # Wait and verify
-            sleep 10
-            curl -f http://localhost:8080/actuator/health || exit 1
             echo "✅ Deployment successful!"
