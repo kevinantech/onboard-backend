@@ -71,4 +71,4 @@ jobs:
             # Iniciar la aplicación
             sudo systemctl start onboard-backend
 
-            echo "✅ Deployment successful!"
+            echo "✅ ¡deploy exitoso!"

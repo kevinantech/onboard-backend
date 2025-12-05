@@ -1,0 +1,10 @@
+2025-12-05 14:18:29 INFO  c.o.backend.service.AlquilerService - Actualización de estados de alquileres completada:
+2025-12-05 14:18:29 INFO  c.o.backend.service.AlquilerService - ? RETRASADOS: 0
+2025-12-05 14:18:29 INFO  c.o.backend.service.AlquilerService - ? NO_DEVUELTO: 0
+2025-12-05 14:18:29 INFO  c.o.backend.service.AlquilerService - ? VEHICULO_DANADO: 0
+2025-12-05 14:18:29 INFO  c.o.backend.service.AlquilerService - ? INCIDENTE_GRAVE: 0
+2025-12-05 15:00:58 INFO  c.o.backend.service.AlquilerService - Actualización de estados de alquileres completada:
+2025-12-05 15:00:58 INFO  c.o.backend.service.AlquilerService - ? RETRASADOS: 0
+2025-12-05 15:00:58 INFO  c.o.backend.service.AlquilerService - ? NO_DEVUELTO: 0
+2025-12-05 15:00:58 INFO  c.o.backend.service.AlquilerService - ? VEHICULO_DANADO: 0
+2025-12-05 15:00:58 INFO  c.o.backend.service.AlquilerService - ? INCIDENTE_GRAVE: 0
